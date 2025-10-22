@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\6_TRPO\\6_TRPO.csproj": {}
+    "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\TRPO\\6_TRPO\\6_TRPO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\6_TRPO\\6_TRPO.csproj": {
+    "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\TRPO\\6_TRPO\\6_TRPO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\6_TRPO\\6_TRPO.csproj",
+        "projectUniqueName": "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\TRPO\\6_TRPO\\6_TRPO.csproj",
         "projectName": "6_TRPO",
-        "projectPath": "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\6_TRPO\\6_TRPO.csproj",
+        "projectPath": "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\TRPO\\6_TRPO\\6_TRPO.csproj",
         "packagesPath": "C:\\Users\\st310-10\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\6_TRPO\\obj\\",
+        "outputPath": "C:\\Users\\st310-10\\Desktop\\ИХС trpo-sp\\TRPO\\6_TRPO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

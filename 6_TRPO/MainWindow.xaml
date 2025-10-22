@@ -11,32 +11,70 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="60"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="300"/>
             <RowDefinition Height="100"/>
-            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
 
         </Grid.RowDefinitions>
-        <DockPanel Background="AliceBlue" Grid.Row="0" Grid.Column="0">
-            <Button Margin="25" Width="150" Height="50" DockPanel.Dock="Left">Главная</Button>
-            <Button Margin="25" Width="150" Height="50" DockPanel.Dock="Left">Профиль</Button>
-            <Button Margin="25"  Width="150" Height="50" DockPanel.Dock="Left">Настройки</Button>
-            <Button Margin="25"  Width="150" Height="50" DockPanel.Dock="Left">Помощь</Button>
-        </DockPanel>
+        <StackPanel Orientation="Horizontal" Background="AliceBlue" Grid.Row="0" Grid.Column="0">
+            <Button FontSize="20" Margin="10" Width="150" Height="40" DockPanel.Dock="Left">Главная</Button>
+            <Button FontSize="20" Margin="10" Width="150" Height="40" DockPanel.Dock="Left">Профиль</Button>
+            <Button Margin="10" FontSize="20" Width="150" Height="40" DockPanel.Dock="Left">Настройки</Button>
+            <Button Margin="10" FontSize="20" Width="150" Height="40" DockPanel.Dock="Left">Помощь</Button>
+        </StackPanel>
         <Grid Grid.Row="1" >
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="350"/>
+                <ColumnDefinition Width="180"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
+                <RowDefinition Height="350"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Border Grid.RowSpan="2" Grid.Row="0" Margin="30" BorderBrush="Black" BorderThickness="0.5">
+                <StackPanel VerticalAlignment="Bottom">
+                <Button Height="30" Margin="20" FontSize="20" DockPanel.Dock="Bottom">Загрузить фото</Button>
+                </StackPanel>
+            </Border>
+            <StackPanel Grid.Column="1" Margin="10">
+                <Label Margin="10" Content="ФИО:" FontSize="18"></Label>
+                <Label Margin="10" Content="Email:" FontSize="18"></Label>
+                <Label Margin="10" Content="Телефон:" FontSize="18"></Label>
+                <Label Margin="10" Content="Дата рождения:" FontSize="18"></Label>
+                <Label Margin="10" Content="Пол:" FontSize="18"></Label>
+                <Label Margin="10" Content="Пароль:" FontSize="18"></Label>
+            </StackPanel>
+            <DockPanel Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top"  Orientation="Horizontal">
+                <Label  Margin="10" Content="Подтверждение пароля:" FontSize="18"></Label>
+                    <TextBox Width="200" Height="30" FontSize="18"></TextBox>
+            </StackPanel>
+            </DockPanel>
+            <StackPanel Margin="10" Grid.Row="0" Grid.Column="2">
+                <TextBox Margin="12"  FontSize="18" Height="30"></TextBox>
+                <TextBox Margin="12"  FontSize="18" Height="30"></TextBox>
+                <TextBox Margin="12"  FontSize="18" Height="30"></TextBox>
+                <DatePicker Margin="12"  FontSize="18" Height="30"></DatePicker>
+                <StackPanel Orientation="Horizontal" Margin="12" Height="30" VerticalAlignment="Center">
+                    <RadioButton  FontSize="18"   Margin="5">Мужской</RadioButton>
+                    <RadioButton  FontSize="18" Margin="5">Женский</RadioButton>
+                </StackPanel>
+                <TextBox Margin="10" FontSize="18" Height="30"></TextBox>
+            </StackPanel>
         </Grid>
         <WrapPanel Orientation="Vertical" Margin="25" Grid.Row="2" Background="LightGray">
-            <Label Content="*Пароль должен содержать минимум 8 символов."/>
-            <Label FontSize="14" Content="*Email должен быть в формате name@mail.com.            *Все поля обязательны"/>
+            <Label Margin="10" FontSize="16" Content="*Пароль должен содержать минимум 8 символов."/>
+            <Label Margin="10" FontSize="16" Content="*Email должен быть в формате name@mail.com.            *Все поля обязательны"/>
         </WrapPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="25" Width="150" Height="25" DockPanel.Dock="Right">Зарегистрироваться</Button>
+            <Button Margin="25" Width="150" Height="25" DockPanel.Dock="Right">Отмена</Button>
+        </StackPanel>
+        <DockPanel Grid.Row="4" Background="LightGray">
+            <Label Content="Готово" FontSize="20" DockPanel.Dock="Left"/>
+        </DockPanel>
     </Grid>
 </Window>
